@@ -21,6 +21,7 @@ today_year = today_date.year
 this_year_birthday = student_birthday_date.replace(year=today_year)
 
 # 2. (Continue here tomorrow)
+# A second test update
 if (today_date - this_year_birthday) >= 0:
     print("Success")
 else:
