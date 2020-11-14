@@ -20,11 +20,12 @@ student_birthday_date = datetime.strptime(student_birthday, '%d/%m/%Y')
 today_year = today_date.year
 this_year_birthday = student_birthday_date.replace(year=today_year)
 
-# 2.
+# 2. (Continue here tomorrow)
 if (today_date - this_year_birthday) >= 0:
     print("Success")
 else:
     print("Success 2")
+
 
 print(this_year_birthday)
 days_to_birthday = student_birthday_date - today_date
