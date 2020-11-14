@@ -16,5 +16,16 @@ student_birthday_date = datetime.strptime(student_birthday, '%d/%m/%Y')
 # 3. If it has, subtract from next year's date.
 # 4. If it hasn't, subtract from it.
 
+# 1.
+today_year = today_date.year
+this_year_birthday = student_birthday_date.replace(year=today_year)
+
+# 2.
+if (today_date - this_year_birthday) >= 0:
+    print("Success")
+else:
+    pass
+
+print(this_year_birthday)
 days_to_birthday = student_birthday_date - today_date
 print(f'It is {str(days_to_birthday)} days to your birthday! Hurray!!!')
