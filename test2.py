@@ -24,7 +24,7 @@ this_year_birthday = student_birthday_date.replace(year=today_year)
 if (today_date - this_year_birthday) >= 0:
     print("Success")
 else:
-    pass
+    print("Success 2")
 
 print(this_year_birthday)
 days_to_birthday = student_birthday_date - today_date
